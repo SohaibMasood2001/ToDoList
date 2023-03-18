@@ -1,0 +1,211 @@
+
+body {
+    background-color: black;
+}
+
+.main {
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    background-color: wheat;
+
+}
+
+#item-input {
+    width: 422px;
+    height: 40px;
+    margin-left: 80px;
+    border: 2px solid black;
+}
+
+.head {
+    margin-left: 240px;
+}
+
+#add,
+#remind,
+#update,
+#clear {
+    background-color: blue;
+    color: antiquewhite;
+    width: 85px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 9px;
+    border-radius: 20px;
+    cursor: pointer;
+
+
+}
+
+#add:hover,
+#remind:hover,
+#update:hover,
+#clear:hover {
+    background-color: rgb(102, 102, 255);
+}
+
+#item-list {
+    border: 2px solid black;
+
+    margin-left: 80px;
+    width: 427px;
+    height: 380px;
+    background-color: snow;
+    overflow: scroll;
+}
+
+.head2 {
+    margin-left: 170px;
+}
+
+.btn-main {
+    margin-left: 150px;
+    width: 400px;
+    height: 40px;
+}
+
+.head-item {
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-left: 80px;
+    width: 427px;
+    height: 40px;
+    background-color: snow;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(70, 46, 15);
+    color: wheat;
+
+}
+
+.items {
+    width: 410px;
+    height: 30px;
+    border-bottom: 2px solid black;
+    margin-Top: 10px;
+
+    padding-bottom: 15px;
+    font-Size: 25px;
+}
+
+.inner-item-img {
+    width: 30px;
+    height: 30px;
+
+
+}
+
+.task-inner-btn {
+    margin-left: 10px;
+    cursor: pointer;
+
+
+}
+
+.inner-btn-span {
+    position: relative;
+    margin-bottom: 5px !important;
+}
+
+#reminder_div {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border: 2px solid red;
+    background-color: slateblue;
+    text-align: center;
+    display: none;
+    margin-left: 604px;
+
+}
+
+.r_input {
+    width: 200px;
+    height: 25px;
+}
+
+.r-btn {
+    margin-top: 10px;
+    width: 80px;
+    height: 35px;
+    font-size: 15px;
+    cursor: pointer;
+
+
+}
+
+.r-btn:hover {
+    background-color: burlywood;
+    color: white;
+}
+
+.container {
+
+    border: 20px dashed rgb(255, 29, 74);
+    float: right;
+    margin-right: 150px;
+    margin-top: 190px;
+    background-color: black;
+    color: rgb(255, 20, 67);
+    font-size: 30px;
+    height: 220px;
+    width: 591px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: clock_t;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes clock_t {
+    0% {
+        border-color: yellow;
+        box-shadow: -6px -1px 115px rgb(217, 6, 236);
+        /* height: 350px;
+        width: 710px; */
+        margin-top: 0px;
+        color: yellow;
+    }
+
+    25% {
+        border-color: springgreen;
+        box-shadow: -6px -1px 115px red;
+        color: springgreen;
+    }
+
+    50% {
+        border-color: plum;
+        box-shadow: -6px -1px 115px rgb(81, 255, 0);
+        /* height: 220px;
+        width: 591px; */
+        margin-top: 400px;
+        color: cyan;
+    }
+
+    75% {
+        border-color: lime;
+        box-shadow: -6px -1px 115px rgb(14, 179, 255);
+        color: darkorange;
+    }
+
+    100% {
+        border-color: aqua;
+        box-shadow: -6px -1px 115px rgb(255, 166, 0);
+        /* height: 350px;
+        width: 710px; */
+        margin-top: 0px;
+        color: papayawhip;
+
+    }
+}
+
+#set-time {
+    float: right;
+    background-color: black;
+    color: white;
+    margin-right: 5px;
+}

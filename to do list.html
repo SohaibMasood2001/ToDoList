@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>to do list</title>
+   
+</head>
+
+<body>
+    <div class="container" id="alarm-msg-container">
+    </div>
+    <div id="reminder_div">
+        <h2 style="margin: 0px; color: rgb(239, 220, 220); margin-top: 5px; margin-bottom: 5px;">Task Name</h2>
+        <input type="text" name="" id="rt-name" placeholder="Enter task name" class="r_input">
+        <h2 style="margin: 0px; color: rgb(239, 220, 220); margin-top: 5px; margin-bottom: 5px;">Select Time</h2>
+        <input type="time" name="time-select" id="tm" class="r_input"><br>
+        <button id="set-reminder" class="r-btn" onclick="set_remind()">Set</button>
+        <button id="Cancel-reminder" class="r-btn" onclick="Cancel_reminder()">Cancel</button>
+    </div>
+    <div class="main">
+        <h2 class="head">Work Reminder </h2>
+        <input type="text" name="items" id="item-input" placeholder="Add any task to do"><br>
+        <div class="btn-main">
+            <button id="add" onclick="adder()">Add</button>
+            <button id="remind" onclick="remind_task()">Reminder</button>
+            <button id="clear" onclick="clear_item()">Clear</button>
+        </div>
+        <div class="head-item">
+            Tasks List
+        </div>
+        <div id="item-list">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
